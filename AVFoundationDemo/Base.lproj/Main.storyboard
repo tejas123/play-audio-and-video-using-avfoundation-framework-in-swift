@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="lpL-SX-8AI">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AVFoundationDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kOC-TQ-opL">
+                                <rect key="frame" x="92" y="249" width="135" height="30"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="sh8-vy-XKT"/>
+                                    <constraint firstAttribute="width" constant="135" id="y0N-hf-0Oj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Play Audio">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnPlayAudioTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TAi-io-NKW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QHB-2e-wsb">
+                                <rect key="frame" x="16" y="518" width="135" height="30"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="135" id="Vj1-0V-z7Z"/>
+                                    <constraint firstAttribute="height" constant="30" id="lAL-hi-QxG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
+                                <state key="normal" title="Repeatedly Play Audio">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnPlayAudioRepeatedlyTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8FD-O8-kg8"/>
+                                    <action selector="btnPlayAudioTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bNd-8r-E7n"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3PH-HH-HKm">
+                                <rect key="frame" x="169" y="518" width="135" height="30"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="TtM-n2-Yff"/>
+                                    <constraint firstAttribute="width" constant="135" id="bfH-qv-SF6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
+                                <state key="normal" title="Stop Audio">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnStopAudioTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yfh-1W-PsF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cjC-Hv-GeS">
+                                <rect key="frame" x="92" y="289" width="135" height="30"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="XNV-16-t6f"/>
+                                    <constraint firstAttribute="width" constant="135" id="YhN-Nz-VjA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Play Video">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnPlayVideoTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EMD-tI-63A"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kOC-TQ-opL" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-20" id="00o-vf-4k5"/>
+                            <constraint firstItem="cjC-Hv-GeS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="20" id="8LR-SG-Bng"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="3PH-HH-HKm" secondAttribute="bottom" constant="20" id="NMw-PH-3fg"/>
+                            <constraint firstItem="kOC-TQ-opL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OdV-2Z-uFB"/>
+                            <constraint firstItem="3PH-HH-HKm" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="TgS-v8-1ku"/>
+                            <constraint firstItem="QHB-2e-wsb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="b2s-px-xnQ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="QHB-2e-wsb" secondAttribute="bottom" constant="20" id="cBR-OM-Da2"/>
+                            <constraint firstItem="cjC-Hv-GeS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qnh-JN-maF"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="u2c-EF-GNQ"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="btnPlayAudioRepeatedly" destination="QHB-2e-wsb" id="XlP-cu-mds"/>
+                        <outlet property="btnStopAudio" destination="3PH-HH-HKm" id="mJg-NS-D1o"/>
+                        <segue destination="mBJ-kf-glb" kind="show" id="cK3-W8-bNK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="684" y="429"/>
+        </scene>
+        <!--AV Player View Controller-->
+        <scene sceneID="97K-KC-qL5">
+            <objects>
+                <avPlayerViewController storyboardIdentifier="VideoPlayerViewController" videoGravity="AVLayerVideoGravityResizeAspect" id="mBJ-kf-glb" customClass="VideoPlayerViewController" customModule="AVFoundationDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </avPlayerViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nkc-eK-iwP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1064" y="429"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="GYO-YH-AJA">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lpL-SX-8AI" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="3Ug-9z-sO4">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="A8o-Ni-FMx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f44-U1-bbt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="429"/>
+        </scene>
+    </scenes>
+</document>
